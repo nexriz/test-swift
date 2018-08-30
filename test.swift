@@ -4,12 +4,32 @@ for (i,item) in arr.enumerated() {
     print("Index \(i) item \(item)")
 }
 
+enum color {
+    case RED
+    case BLUE
+    case YELLOW
+}
+let myColor = color.RED
+switch myColor {
+    case .RED:
+        print("Color \(color.RED)") 
+    default:
+        print("")
+}
+
 // arr.sorted(by: {(s1: String, s2: String) -> Bool in 
 //     return s1
 // })
 
 
+struct Person {
+    var name = ""
+    var age: Int
+}
 
+let viktor = Person(name: "lil", age: 12)
+
+print(viktor)
 
 
 // func hej() -> String {
